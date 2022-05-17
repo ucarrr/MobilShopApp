@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center|center_horizontal|center_vertical"
+    android:orientation="vertical"
+    tools:context=".EditProfile">
+
+
+    <ImageView
+        android:id="@+id/imageViewEditProfilePhoto"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_margin="25dp"
+        app:srcCompat="@drawable/profilresim" />
+
+   <!-- <ImageView
+        android:id="@+id/imageViewEditProfilePlus"
+        android:layout_width="25dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="-40dp"
+        app:srcCompat="@drawable/plus" />-->
+
+    <EditText
+        android:id="@+id/editTextNameProfile"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="New Name"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/editTextSurnameProfile"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="New Surname"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/editTextPhoneProfile"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="New Phone"
+        android:inputType="phone" />
+
+    <EditText
+        android:id="@+id/editTextEmailAddressProfile"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="New Email"
+        android:inputType="textEmailAddress" />
+
+    <EditText
+        android:id="@+id/editTextPasswordProfile"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="New Password"
+        android:inputType="textPassword" />
+
+    <EditText
+        android:id="@+id/editTextPasswordComfirmProfile"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Comfirm Password"
+        android:inputType="textPassword" />
+
+    <Button
+        android:id="@+id/Uploadbutton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="40dp"
+        android:onClick="UploadData"
+        android:text="SAVE" />
+</LinearLayout>

@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="180dp"
+    android:orientation="vertical">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/mycart_cartview"
+        android:layout_width="match_parent"
+        android:layout_height="180dp">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/imageViewCartviewmyCart"
+                android:layout_width="100dp"
+                android:layout_height="120dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="14dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/ev" />
+
+
+            <TextView
+                android:id="@+id/CartviewMycartproductname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="44dp"
+                android:layout_marginLeft="44dp"
+                android:layout_marginTop="26dp"
+                android:text="Product Name"
+                app:layout_constraintStart_toEndOf="@+id/imageViewCartviewmyCart"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/textViewcartviewmycartResourceName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:layout_marginStart="44dp"
+                android:layout_marginLeft="44dp"
+                android:layout_marginTop="8dp"
+                android:text="Marka"
+                app:layout_constraintStart_toEndOf="@+id/imageViewCartviewmyCart"
+                app:layout_constraintTop_toBottomOf="@+id/CartviewMycartproductname" />
+
+            <TextView
+                android:id="@+id/textViewcartviewmycartCost"
+                android:layout_width="71dp"
+                android:layout_height="43dp"
+                android:layout_marginEnd="30dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginBottom="22dp"
+                android:gravity="center"
+                android:text="Cost"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent" />
+
+            <TextView
+                android:id="@+id/textViewcartviewmycartEstimate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:layout_marginStart="50dp"
+                android:layout_marginLeft="50dp"
+                android:layout_marginTop="72dp"
+                android:layout_marginBottom="32dp"
+                android:text="Kargo"
+                android:textSize="15sp"
+                android:textStyle="italic"
+                app:layout_constraintBottom_toTopOf="@+id/imageViewbar"
+                app:layout_constraintStart_toEndOf="@+id/textViewcardviewdetail"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/textViewcardviewdetail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="44dp"
+                android:layout_marginLeft="44dp"
+                android:layout_marginTop="9dp"
+                android:text="Beden"
+                app:layout_constraintStart_toEndOf="@+id/imageViewCartviewmyCart"
+                app:layout_constraintTop_toBottomOf="@+id/textViewcartviewmycartResourceName" />
+
+            <TextView
+                android:id="@+id/cartviewmycartAdet"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="43dp"
+                android:layout_marginLeft="43dp"
+                android:layout_marginTop="8dp"
+                android:text="Adet:1"
+                app:layout_constraintBottom_toTopOf="@+id/imageViewbar"
+                app:layout_constraintStart_toEndOf="@+id/imageViewCartviewmyCart"
+                app:layout_constraintTop_toBottomOf="@+id/textViewcardviewdetail" />
+
+            <ImageView
+                android:id="@+id/imageViewbar"
+                android:layout_width="109dp"
+                android:layout_height="wrap_content"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textViewcartviewmycartEstimate"
+                app:srcCompat="@drawable/ic_horizon" />
+
+            <ImageView
+                android:id="@+id/garbage"
+                android:layout_width="25dp"
+                android:layout_height="35dp"
+                android:layout_marginTop="26dp"
+                android:layout_marginEnd="31dp"
+                android:layout_marginRight="31dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/garbage5" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>
